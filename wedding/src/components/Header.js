@@ -53,6 +53,34 @@ export class Header extends Component {
                         </div>
                     </div>
                 </div>
+                <div className = "header-mobile">
+                    <div id = "site-title-wrapper" data-content-field = "site-title">
+                        <h1 id = "site-title">
+                            <a href = "/" data-shrink-original-size = "30">Oleg & Makayla</a>
+                        </h1>
+                    </div>
+
+                    <div class="menu-wrap">
+                        <input type="checkbox" class="toggler"/>
+                        <div class="hamburger">
+                            <div></div>
+                        </div>
+                        <div class="menu">
+                            <div>
+                                <div>
+                                    <ul>
+                                        <li><a href = "/">Ceremony</a></li>
+                                        <li><a href = "/">Reception</a></li>
+                                        <li><a href = "/">Afterparty</a></li>
+                                        <li><a href = "/">Accommodations</a></li>
+                                        <li><a href = "/">Registry</a></li>
+                                        <li><a href = "/">RSVP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
         )
     }
