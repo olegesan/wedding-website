@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("res/test_photo_2.jpg");
+  background: #dfb3ae;
   background-size: 100%;
   background-repeat: no-repeat;
 }
