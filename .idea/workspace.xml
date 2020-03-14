@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81c60863-42e3-4af2-ae70-5c229f40d56d" name="Default Changelist" comment="" />
+    <list default="true" id="81c60863-42e3-4af2-ae70-5c229f40d56d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wedding/src/components/RSVP.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wedding/src/components/RSVP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/yarn.lock" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,12 +34,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wedding" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wedding" />
+      <recent name="$PROJECT_DIR$/wedding/wedding-backend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wedding/src/res" />
       <recent name="$PROJECT_DIR$/wedding/public" />
@@ -47,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584209994999</updated>
       <workItem from="1584209998024" duration="579000" />
-      <workItem from="1584210633496" duration="7600000" />
+      <workItem from="1584210633496" duration="8158000" />
     </task>
     <servers />
   </component>
