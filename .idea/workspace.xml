@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81c60863-42e3-4af2-ae70-5c229f40d56d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wedding/src/components/RSVP.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wedding/src/components/RSVP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wedding/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wedding/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wedding/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wedding/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wedding/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wedding/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/src/components/MainPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/components/MainPane.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +35,13 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wedding" />
-      <recent name="$PROJECT_DIR$/wedding/wedding-backend" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wedding/src/res" />
       <recent name="$PROJECT_DIR$/wedding/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wedding" />
+      <recent name="$PROJECT_DIR$/wedding/wedding-backend" />
     </key>
   </component>
   <component name="SvnConfiguration">

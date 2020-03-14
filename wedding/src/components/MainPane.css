@@ -15,7 +15,13 @@ h3 {
     height: 800px;
     max-height:100vh;
 }
-
+.images-wrap{
+    height: 800px;
+    max-height:100vh;
+}
+.images-wrap > .active{
+    width:100vw !important;
+}
 .each-slide span {
     padding: 20px;
     font-size: 9em;
@@ -64,6 +70,10 @@ h3 {
 
         height: 600px;
     }
+    .images-wrap{
+        height: 600px;
+        max-height:100vh;
+    }
 }
 @media (max-width:767px) {
     .each-slide > div {
@@ -72,5 +82,9 @@ h3 {
     .each-slide span{
         text-shadow: black 0px 0px 1px;
         font-size: 3em;
+    }
+    .images-wrap{
+        height: 300px;
+        max-height:100vh;
     }
 }
