@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import Header from './components/Header'
+import Header from './components/Header';
+import MainPane from './components/Main-pane';
 
 function Head() {
   return (
@@ -26,6 +27,8 @@ class App extends Component {
       <div className="App">
         <Head></Head>
         <Header></Header>
+        <MainPane className={"main-pane"}></MainPane>
+
         <body></body>
       </div>
     );
