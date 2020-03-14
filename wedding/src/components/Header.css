@@ -58,6 +58,9 @@
 
 #header-nav-wrapper {
     text-align: center;
+    text-transform: uppercase;
+    font-size: small;
+    color: #fff;
     position: relative;
     width: 100%;
 }
@@ -85,4 +88,8 @@ nav {
 
 a {
     text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
 }
