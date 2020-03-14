@@ -1,0 +1,132 @@
+.rsvp {
+    height: 100%;
+    width: 100%;
+    background-color: #dfb3ae;
+    position: absolute;
+}
+
+.form {
+    height: 630px;
+    width: 400px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 10px;
+    color: #23292E;
+    padding: 0;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .25);
+}
+
+.form input {
+    font-size: 15px;
+    color: #23292E;
+    padding: 6px;
+    margin: 25px auto 20px;
+    display: block;
+    width: 75%;
+}
+
+select, option {
+    color: #333;
+    padding: 6px;
+    margin: 25px auto 20px;
+    display: block;
+    width: 80%;
+}
+
+select option[data-default] {
+    display: none;
+}
+
+select::placeholder {
+    color: #333;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.info {
+    padding: 10px;
+}
+
+h1, h2, p, span {
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Parisienne', 'Josefin Sans', sans-serif;
+}
+
+span.line {
+    margin: 0px auto 20px auto;
+    color: #999;
+}
+
+.button button {
+    display: inline-block;
+    width: 400px;
+}
+
+button {
+    color: #fff;
+    background-color: #e4bc62;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 32px;
+    width: 200px;
+    margin: -8px auto 0px auto;
+    float: left;
+}
+
+button.cancel {
+    border-radius: 0px 0px 0px 10px;
+    border-right: solid 1px #dead3b;
+}
+
+button.submit {
+    border-radius: 0px 0px 10px 0px;
+}
+
+button:hover {
+    background-color: #dead3b;
+    transition: .5s;
+}
+
+button:focus {
+    outline: 0;
+} 
+
+#left {
+    width: 45%;
+    margin-left: 27px;
+}
+
+#right {
+    width: 45%;
+    margin-left: 183px;
+    margin-top: -56px;
+}
+
+@media (max-width: 767px) {
+    .rsvp {
+        width: 100%;
+        height: 140vw;
+        background-color: #dfb3ae;
+        position: absolute;
+    }
+
+    .form {
+        height: 680px;
+        width: 400px;
+        background-color: #fff;
+        margin: 100px auto;
+        border-radius: 10px;
+        color: #23292E;
+        padding: 0;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, .25);
+    }
+}
