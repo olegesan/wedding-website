@@ -1,7 +1,10 @@
-import React, {Component} from 'react';
-import './App.css';
-import Header from './components/Header';
-import MainPane from './components/Main-pane';
+
+import React, {Component} from 'react'
+import './App.css'
+import { BrowserRouter, Route} from 'react-router-dom';
+import Header from './components/Header'
+import RSVP from './components/RSVP'
+import MainPane from "./components/Main-pane";
 
 function Head() {
   return (
@@ -9,6 +12,7 @@ function Head() {
       <head>
         <style>
           <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet"></link>
         </style>
       </head>
     </html>
@@ -25,11 +29,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Head></Head>
-        <Header></Header>
-        <MainPane className={"main-pane"}></MainPane>
 
-        <body></body>
+        <Head/>
+        <BrowserRouter>
+          <Header className = "header-nav-bar" handleEnter = {this.handleEnter}></Header>
+            <MainPane className={"main-pane"}></MainPane>
+          <Route exact path = "/RSVP" render = {() => <RSVP className = "rsvp"/>}/>
+        </BrowserRouter>
+        <body/>
       </div>
     );
   }  
