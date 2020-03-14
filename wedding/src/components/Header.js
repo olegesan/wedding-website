@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 export class Header extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ export class Header extends Component {
                 <div className = "header-inner">
                     <div id = "site-title-wrapper" data-content-field = "site-title">
                         <h1 id = "site-title">
-                            <a href = "/" data-shrink-original-size = "30">Oleg & Makayla</a>
+                            <Link to = "/">Oleg & Makayla</Link>
                         </h1>
                     </div>
                     <div id = "header-nav">
@@ -27,26 +28,26 @@ export class Header extends Component {
                             <div className = "nav-left">
                                 <nav className = "nav-bar">
                                     <div className = "nav-item">
-                                        <a href = "/">Ceremony</a>
+                                        <Link to = "/Ceremony">Ceremony</Link>
                                     </div>
                                     <div className = "nav-item">
-                                        <a href = "/">Reception</a>
+                                        <Link to = "/Reception">Reception</Link>
                                     </div>
                                     <div className = "nav-item">
-                                        <a href = "/">Afterparty</a>
+                                        <Link to = "/Afterparty">Afterparty</Link>
                                     </div>
                                 </nav>
                             </div>
                             <div className = "nav-right">
                                 <nav className = "nav-bar">
                                     <div className = "nav-item">
-                                        <a href = "/">Accommodations</a>
+                                        <Link to = "/Accommodations">Accommodations</Link>
                                     </div>
                                     <div className = "nav-item">
-                                        <a href = "/">Registry</a>
+                                        <Link to = "/Registry">Registry</Link>
                                     </div>
                                     <div className = "nav-item">
-                                        <a href = "/">RSVP</a>
+                                        <Link to = "/RSVP">RSVP</Link>
                                     </div>
                                 </nav>
                             </div>
@@ -56,7 +57,7 @@ export class Header extends Component {
                 <div className = "header-mobile">
                     <div id = "site-title-wrapper" data-content-field = "site-title">
                         <h1 id = "site-title">
-                            <a href = "/" data-shrink-original-size = "30">Oleg & Makayla</a>
+                            <Link to = "/" data-shrink-original-size = "30">Oleg & Makayla</Link>
                         </h1>
                     </div>
 
@@ -69,12 +70,12 @@ export class Header extends Component {
                             <div>
                                 <div>
                                     <ul>
-                                        <li><a href = "/">Ceremony</a></li>
-                                        <li><a href = "/">Reception</a></li>
-                                        <li><a href = "/">Afterparty</a></li>
-                                        <li><a href = "/">Accommodations</a></li>
-                                        <li><a href = "/">Registry</a></li>
-                                        <li><a href = "/">RSVP</a></li>
+                                        <li><Link to = "/">Ceremony</Link></li>
+                                        <li><Link to = "/">Reception</Link></li>
+                                        <li><Link to = "/">Afterparty</Link></li>
+                                        <li><Link to = "/">Accommodations</Link></li>
+                                        <li><Link to = "/">Registry</Link></li>
+                                        <li><Link to = "/">RSVP</Link></li>
                                     </ul>
                                 </div>
                             </div>
