@@ -65,6 +65,17 @@ h3 {
     background-color: rgba(59, 160, 200, 0.1);
     background-blend-mode: multiply;
 }
+.capture{
+    position:absolute;
+    color:white;
+    width:calc(100% - 20px);
+    margin:0px;
+    margin-top:30vh;
+    font-size: 9em;
+    z-index: 2;
+    padding:10px;
+    text-shadow: rgba(32, 36, 28, 0.97) 0px 0px 1px;
+}
 @media (max-width:1000px) {
     .each-slide > div {
 
@@ -73,6 +84,10 @@ h3 {
     .images-wrap{
         height: 600px;
         max-height:100vh;
+    }
+    .capture{
+        margin-top:30vh;
+        font-size: 7em;
     }
 }
 @media (max-width:767px) {
@@ -83,8 +98,14 @@ h3 {
         text-shadow: black 0px 0px 1px;
         font-size: 3em;
     }
+    .capture{
+        margin-top:20vh;
+        font-size: 3em;
+    }
     .images-wrap{
         height: 300px;
         max-height:100vh;
     }
 }
+
+

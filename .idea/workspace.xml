@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="81c60863-42e3-4af2-ae70-5c229f40d56d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wedding/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wedding/src/components/MainPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/components/MainPane.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding/src/components/MainPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/wedding/src/components/MainPane.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,5 +75,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584210617095" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1584227427391">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1584227427391" />
   </component>
 </project>
