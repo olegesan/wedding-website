@@ -3,6 +3,8 @@
     width: 100%;
     background-color: #dfb3ae;
     position: absolute;
+
+
 }
 
 .form {
@@ -23,6 +25,13 @@
     margin: 25px auto 20px;
     display: block;
     width: 75%;
+}
+
+select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
 }
 
 select, option {
