@@ -4,7 +4,7 @@ import './App.css'
 import { BrowserRouter, Route} from 'react-router-dom';
 import Header from './components/Header'
 import RSVP from './components/RSVP'
-import MainPane from "./components/main-pane";
+import MainPane from "./components/MainPane";
 
 function Head() {
   return (
