@@ -59,13 +59,13 @@ h3 {
     background-color: rgba(59, 160, 200, 0.1);
     background-blend-mode: multiply;
 }
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
     .each-slide > div {
 
         height: 600px;
     }
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .each-slide > div {
         height: 300px;
     }
