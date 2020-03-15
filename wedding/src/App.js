@@ -6,6 +6,7 @@ import Header from './components/Header'
 import RSVP from './components/RSVP'
 import MainPane from './components/MainPane'
 import Ceremony from './components/Ceremony'
+import Reception from './components/Reception'
 
 function Head() {
   return (
@@ -37,6 +38,7 @@ class App extends Component {
             <MainPane className={"main-pane"}></MainPane>
           <Route exact path = "/RSVP" render = {() => <RSVP className = "rsvp"/>}/>
           <Route exact path = "/Ceremony" render = {() => <Ceremony/>}/>
+          <Route exact path = "/Reception" render = {() => <Reception/>}/>
         </BrowserRouter>
         <body/>
       </div>
