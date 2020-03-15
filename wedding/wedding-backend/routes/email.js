@@ -95,10 +95,10 @@ const sendEmail = (req)=>{
       };
       data.attending = data.attending==='Yes'?1:0;
       console.log(data);
-    //   sgMail.send(msg)
-    //   .then(()=>{
-    //       console.log('sent successfully')
-    //   });
+      sgMail.send(msg)
+      .then(()=>{
+          console.log('sent successfully')
+      });
     return data;
       
 }
