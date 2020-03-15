@@ -1,0 +1,18 @@
+.ceremony {
+    height: 900px;
+    width: 100%;
+    color: #23292E;
+    background-color: #fff;
+    margin-top: -2px;
+}
+
+.image-wraper {
+    display: block;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: block;
+}

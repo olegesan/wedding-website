@@ -22,15 +22,19 @@ class MainPane extends Component{
             return (
                 <div className={'each-slide'}>
                     <div key={key} className={'background-tint'} style={{'backgroundImage': `url(${img})`}}>
-                        <span>We're Engaged!</span>
+
                     </div>
                 </div>
             )
         })
         return(
-            <Slide {...properties} >
-                {slides}
-            </Slide>
+            <div>
+                <span className={'capture'}>We're Engaged!</span>
+                <Slide {...properties} >
+
+                    {slides}
+                </Slide>
+            </div>
             )
     }
 
