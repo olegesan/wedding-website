@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import './RSVP.css'
 
 export class RSVP extends Component {
+    componentDidMount() {
+        this.refs.rsvp.scrollIntoView()
+    }
 
     getInfo () {
         var dict = {
@@ -36,7 +39,7 @@ export class RSVP extends Component {
 
     render() {
         return (
-            <div className = "rsvp">
+            <div className = "rsvp" ref = "rsvp">
                 <div className = "form">
                     <div className = "info">
                         <h1>RSVP</h1>

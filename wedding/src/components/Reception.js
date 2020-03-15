@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import './Reception.css'
 
 export class Reception extends Component {
+    componentDidMount() {
+        this.refs.reception.scrollIntoView()
+    }
+
     OpenMap() {
         window.open(
             "https://www.google.com/maps/place/1000+University+Center+Ln,+Lawrenceville,+GA+30043/@33.9802512,-84.0067871,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5be6c2c46c57b:0x206958d65c40ee2b!8m2!3d33.9802468!4d-84.0045984",
@@ -11,7 +15,7 @@ export class Reception extends Component {
 
     render() {
         return (
-            <div className = "reception">
+            <div className = "reception" ref =  "reception">
                 <div className = 'padding'/>
                 <div className = "image-wrapper-reception"/>
                 <div className = "info-wrapper">
