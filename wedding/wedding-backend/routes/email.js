@@ -27,6 +27,7 @@ router.post('/', (req,res)=>{
     })
 })
 router.post('/rsvp', (req,res)=>{
+
     let data = sendEmail(req);
 
     let db = new sql.Database('./db/rsvp_info.db', (err)=>{
@@ -87,13 +88,13 @@ const sendEmail = (req)=>{
         <h3>From:</h3>
         <p>${firstName} ${lastName}</p>
         <h3>Attending:</h3>
-        <p>${attending?'Yes':'No'}</p>
+        <p>${attending?'yes':'no'}</p>
         <h3>Guests:</h3>
         <p>${numOfGuests}</p>
         <h3>Contact-email:</h3>
         <p>${email}<p>`,
       };
-      data.attending = data.attending==='Yes'?1:0;
+      data.attending = data.attending==='yes'?1:0;
       console.log(data);
       sgMail.send(msg)
       .then(()=>{
