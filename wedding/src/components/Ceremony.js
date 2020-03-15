@@ -13,7 +13,7 @@ export class Ceremony extends Component {
         return (
             <div className = "ceremony">
                 <div className = 'padding'/>
-                <div className = "image-wrapper"/>
+                <div className = "image-wrapper-ceremony"/>
                 <div className = "info-wrapper">
                     <h1>The Ceremony</h1>
                     <p id = "bold">4:00pm</p>

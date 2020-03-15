@@ -13,7 +13,7 @@ export class Reception extends Component {
         return (
             <div className = "reception">
                 <div className = 'padding'/>
-                <div className = "image-wrapper"/>
+                <div className = "image-wrapper-reception"/>
                 <div className = "info-wrapper">
                     <h1>The Reception</h1>
                     <p id = "bold">4:30 PM - 10:00 PM</p>

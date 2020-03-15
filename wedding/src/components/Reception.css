@@ -6,7 +6,7 @@
     margin-top: -2px;
 }
 
-.image-wrapper {
+.image-wrapper-reception {
     display: block;
     background-image: url('../res/test_photo_3.jpg');
     background-size: cover;
@@ -40,6 +40,6 @@
     background-color: transparent;
 }
 
-button:hover {
+#button:hover {
     background-color: transparent;
 }

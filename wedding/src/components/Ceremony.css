@@ -6,7 +6,7 @@
     margin-top: -2px;
 }
 
-.image-wrapper {
+.image-wrapper-ceremony {
     display: block;
     background-image: url('../res/test_photo_2.jpg');
     height: 500px;
@@ -39,6 +39,6 @@
     background-color: transparent;
 }
 
-button:hover {
+#button:hover {
     background-color: transparent;
 }
