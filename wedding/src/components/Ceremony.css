@@ -6,13 +6,39 @@
     margin-top: -2px;
 }
 
-.image-wraper {
+.image-wrapper {
     display: block;
+    background-image: url('../res/test_photo_2.jpg');
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin: auto;
 }
 
-img {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    display: block;
+.padding {
+    padding-top: 100px;
+    background-color: #fff;
+}
+
+.info-wrapper {
+    margin-top: 50px;
+}
+
+#bold {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#button {
+    color: #E4BC62;
+    width: 10%;
+    margin-right: 45%;
+    margin-left: 45%;
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: transparent;
 }
