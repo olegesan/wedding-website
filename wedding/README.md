@@ -1,3 +1,14 @@
+#TODO:
+[]fix rsvp form for mobile
+- fix title for mobile (my iphone has one name on top of another and close together)
+Thisnis what it looks like
+
+- put accomodations, reception, ceremony on one page.
+- style with theme colors
+- deploy
+- add sticky menu, scroll spy
+-fix mobile menu links (don't work)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
