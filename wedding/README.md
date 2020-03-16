@@ -1,14 +1,19 @@
 # TODO:
 - fix rsvp form for mobile
-- git fix title for mobile (my iphone has one name on top of another and close together)
-Thisnis what it looks like
-
+- DONE git fix title for mobile (my iphone has one name on top of another and close together)
 - put accomodations, reception, ceremony on one page.
 - style with theme colors
 - deploy
 - add sticky menu, scroll spy
--fix mobile menu links (don't work)
-
+- fix mobile menu links (don't work)
+/* 
+###TODO
+- Colors:
+-   Dark Blue:     #34456F
+-    Light Purple:  #C1BFE2
+-    Light Blue:    #90A3BD
+-    Green:         #607267
+*/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
