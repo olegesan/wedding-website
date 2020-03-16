@@ -1,5 +1,5 @@
 .reception {
-    height: 900px;
+    min-height: 101vh;
     width: 100%;
     color: #23292E;
     background-color: #d5dbe3;
@@ -14,8 +14,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 800px;
-    width: 800px;
+    height: 600px;
+    width: 600px;
     border-radius: 50%;
     margin: auto;
 }
@@ -41,8 +41,7 @@
 #button {
     color: #607267;
     width: 10%;
-    margin-right: 45%;
-    margin-left: 45%;
+    font-size:16px;
     border: none;
     background-color: transparent;
 }

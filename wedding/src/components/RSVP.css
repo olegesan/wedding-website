@@ -102,7 +102,7 @@ hr.line {
     width: 400px;
 }
 
-button {
+.button-rsvp {
     color: #fff;
     background-color: #34456F;
     border: none;
@@ -114,21 +114,21 @@ button {
     float: left;
 }
 
-button.cancel {
+.button-rsvp.cancel {
     border-radius: 0px 0px 0px 10px;
     border-right: solid 1px #90A3BD;
 }
 
-button.submit {
+.button-rsvp.submit {
     border-radius: 0px 0px 10px 0px;
 }
 
-button:hover {
+.button-rsvp:hover {
     background-color: #90A3BD;
     transition: .5s;
 }
 
-button:focus {
+.button-rsvp:focus {
     outline: 0;
 } 
 
