@@ -36,7 +36,10 @@ class App extends Component {
         <Head/>
         <BrowserRouter>
           <Header className = "header-nav-bar" handleEnter = {this.handleEnter}></Header>
-            <MainPane className={"main-pane"}></MainPane>
+            <MainPane className={"main-pane"}/>
+            {/* <Ceremony/>
+            <Reception/>
+            <Afterparty/> */}
           <Route exact path = "/RSVP" render = {() => <RSVP className = "rsvp"/>}/>
           <Route exact path = "/Ceremony" render = {() => <Ceremony/>}/>
           <Route exact path = "/Reception" render = {() => <Reception/>}/>
