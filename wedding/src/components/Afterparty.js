@@ -17,7 +17,7 @@ export class Afterparty extends Component {
         return (
             <div className = "afterparty" ref = "afterparty">
                 <div className = 'padding'/>
-                <div className = "image-wrapper-afterparty"/>
+                <div className = "image-wrapper-afterparty image-wrapper"/>
                 <div className = "info-wrapper">
                     <h1>The Afterparty</h1>
                     <p id = "bold">10:00 PM - 2:00 AM</p>

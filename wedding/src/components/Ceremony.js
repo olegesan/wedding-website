@@ -16,8 +16,11 @@ export class Ceremony extends Component {
     render() {
         return (
             <div className = "ceremony" ref = "ceremony">
-                <div className = 'padding'/>
-                <div className = "image-wrapper-ceremony"/>
+                <div className = 'padding' id = "ceremony-padding"/>
+                <div className = "image-wrapper-ceremony image-wrapper">
+
+                {/* <img src={require(`../res/test_photo_2.jpg`)} className='img-round'></img> */}
+                </div>
                 <div className = "info-wrapper">
                     <h1>The Ceremony</h1>
                     <p id = "bold">4:00pm</p>

@@ -17,7 +17,7 @@ export class Reception extends Component {
         return (
             <div className = "reception" ref =  "reception">
                 <div className = 'padding' id = "reception-padding"/>
-                <div className = "image-wrapper-reception"/>
+                <div className = "image-wrapper-reception image-wrapper"/>
                 <div className = "info-wrapper">
                     <h1>The Reception</h1>
                     <p id = "bold">4:30 PM - 10:00 PM</p>

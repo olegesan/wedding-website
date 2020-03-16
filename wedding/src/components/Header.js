@@ -75,7 +75,7 @@ export class Header extends Component {
                     </div>
 
                     <div class="menu-wrap">
-                        <input type = "checkbox" className = "toggler" ref = {this.toggler} checked={this.state.checked} onChange={event=>{console.log(this.toggler.current.checked)}} onClick={this.handleMobileMenu}/>
+                        <input type = "checkbox" className = "toggler" ref = {this.toggler} checked={this.state.checked} onClick={this.handleMobileMenu}/>
                         <div class="hamburger">
                             <div></div>
                         </div>
@@ -83,7 +83,7 @@ export class Header extends Component {
                             <div>
                                 <div>
                                     <ul>
-        <li><Link to = "/Ceremony" onClick={this.handleMobileMenu}>Ceremony </Link></li>
+                                        <li><Link to = "/Ceremony" onClick={this.handleMobileMenu}>Ceremony </Link></li>
                                         <li onClick={this.handleMobileMenu}><Link to = "/Reception" >Reception</Link></li>
                                         <li onClick={this.handleMobileMenu}><Link to = "/Afterparty">Afterparty</Link></li>
                                         <li onClick={this.handleMobileMenu}><Link to = "/Accommodations">Accommodations</Link></li>

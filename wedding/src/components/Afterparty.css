@@ -9,12 +9,8 @@
 .image-wrapper-afterparty {
     display: block;
     background-image: url('../res/test_photo_4.jpg');
-    background-size: cover;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    margin: auto;
 }
+
 
 .padding {
     padding-top: 100px;
@@ -42,4 +38,20 @@
 
 #button:hover {
     background-color: transparent;
+}
+@media (max-width: 767px){
+    .image-wrapper{
+
+        height: 400px;
+        width: 400px;
+
+    }
+}
+@media (max-width: 400px){
+    .image-wrapper{
+
+        height: 300px;
+        width: 300px;
+
+    }
 }

@@ -9,13 +9,16 @@
 .image-wrapper-reception {
     display: block;
     background-image: url('../res/test_photo_3.jpg');
-    background-size: cover;
-    height: 500px;
-    width: 500px;
+}
+.image-wrapper{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 800px;
+    width: 800px;
     border-radius: 50%;
     margin: auto;
 }
-
 .padding {
     padding-top: 100px;
     background-color: #fff;
@@ -46,4 +49,20 @@
 
 #button:hover {
     background-color: transparent;
+}
+@media (max-width: 767px){
+    .image-wrapper{
+
+        height: 400px;
+        width: 400px;
+
+    }
+}
+@media (max-width: 400px){
+    .image-wrapper{
+
+        height: 300px;
+        width: 300px;
+
+    }
 }

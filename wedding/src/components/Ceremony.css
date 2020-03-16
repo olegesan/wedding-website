@@ -2,22 +2,21 @@
     height: 900px;
     width: 100%;
     color: #23292E;
-    background-color: #fff;
+    background-color: rgb(251, 239, 255);
     margin-top: -2px;
 }
 
 .image-wrapper-ceremony {
     display: block;
-    background-image: url('../res/test_photo_2.jpg');
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    margin: auto;
+    background-image: url('../res/test_photo_1.jpg');
+    
 }
 
 .padding {
     padding-top: 100px;
-    background-color: #fff;
+}
+#ceremony-padding{
+    background-color: rgb(251, 239, 255);
 }
 
 .info-wrapper {
@@ -41,4 +40,20 @@
 
 #button:hover {
     background-color: transparent;
+}
+@media (max-width: 767px){
+    .image-wrapper{
+
+        height: 400px;
+        width: 400px;
+
+    }
+}
+@media (max-width: 400px){
+    .image-wrapper{
+
+        height: 300px;
+        width: 300px;
+
+    }
 }
