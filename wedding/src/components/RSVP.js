@@ -68,7 +68,7 @@ export class RSVP extends Component {
                         <h1>RSVP</h1>
                         <h2>for the wedding of</h2>
                         <h1>Oleg & Makayla</h1>
-                        <span className = "line">____________________________________</span>
+                        <hr className = "line"/>
                         <h2>Details</h2>
                         <p>Saturday, March 14, 2020</p>
                         <p>5:00 PM</p>
@@ -76,7 +76,7 @@ export class RSVP extends Component {
                         <h2>Ceremony & Reception</h2>
                         <p>A Beautiful Church</p>
                         <p>1000 Church Rd. Lawrenceville, GA 30019</p>
-                        <span className = "line">_____________________________________</span>
+                        <hr className = "line"/>
                         <input type = "email" placeholder = "Email" value={this.state.email} onChange = {(event)=>{this.setState({email:event.target.value})}}/>
                         <div id = "left">
                             <input type = "text" placeholder = "First Name" value={this.state.firstName} onChange = {(event)=>{this.setState({firstName:event.target.value})}}/>
