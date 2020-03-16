@@ -1,7 +1,7 @@
 .rsvp {
     height: auto;
     width: 100%;
-    background-color: #dfb3ae;
+    background-color: #C1BFE2;
     position: absolute;
 }
 
@@ -92,7 +92,7 @@ hr.line {
 
 button {
     color: #fff;
-    background-color: #e4bc62;
+    background-color: #34456F;
     border: none;
     font-size: 18px;
     font-weight: 600;
@@ -104,7 +104,7 @@ button {
 
 button.cancel {
     border-radius: 0px 0px 0px 10px;
-    border-right: solid 1px #dead3b;
+    border-right: solid 1px #90A3BD;
 }
 
 button.submit {
@@ -112,7 +112,7 @@ button.submit {
 }
 
 button:hover {
-    background-color: #dead3b;
+    background-color: #90A3BD;
     transition: .5s;
 }
 
@@ -135,7 +135,7 @@ button:focus {
     .rsvp {
         width: 100%;
         height: auto;
-        background-color: #dfb3ae;
+        background-color: #C1BFE2;
         position: absolute;
     }
 

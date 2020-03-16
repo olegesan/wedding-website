@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './RSVP.css'
 
@@ -55,6 +55,11 @@ export class RSVP extends Component {
         suggestions:''
     })
     }
+    scrollToTop() {
+        useEffect(() => {
+            window.scrollTo(0,0)
+        }, [])
+    }
     render() {
         return (
             <div className = "rsvp" ref = "rsvp">
@@ -89,7 +94,7 @@ export class RSVP extends Component {
                         <textarea placeholder = "Suggestions" rows = "4" cols = "30" value={this.state.suggestions} onChange  = {event => {this.setState({suggestions:event.target.value})}}></textarea>
 
                     </div>
-                    <Link to = "/"><button className = "cancel">Cancel</button></Link>
+                    <Link to = "/"><button className = "cancel" onClick = "scrollToTop()">Cancel</button></Link>
                     <button className = "submit" onClick = {this.submitRSVP}>Submit</button>
                 </div>
             </div>

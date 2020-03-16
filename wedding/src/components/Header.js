@@ -6,6 +6,7 @@ export class Header extends Component {
     constructor(props) {
         super (props)
         this.handleKeyPress = this.handleKeyPress.bind(this)
+        this.toggler = React.createRef()
     }
 
     handleKeyPress(e) {
@@ -62,7 +63,7 @@ export class Header extends Component {
                     </div>
 
                     <div class="menu-wrap">
-                        <input type="checkbox" class="toggler"/>
+                        <input type = "checkbox" className = "toggler" ref = {this.toggler}/>
                         <div class="hamburger">
                             <div></div>
                         </div>
@@ -70,12 +71,12 @@ export class Header extends Component {
                             <div>
                                 <div>
                                     <ul>
-                                        <li><Link to = "/">Ceremony</Link></li>
-                                        <li><Link to = "/">Reception</Link></li>
-                                        <li><Link to = "/">Afterparty</Link></li>
-                                        <li><Link to = "/">Accommodations</Link></li>
-                                        <li><Link to = "/">Registry</Link></li>
-                                        <li><Link to = "/">RSVP</Link></li>
+                                        <li><Link to = "/Ceremony">Ceremony</Link></li>
+                                        <li><Link to = "/Reception">Reception</Link></li>
+                                        <li><Link to = "/Afterparty">Afterparty</Link></li>
+                                        <li><Link to = "/Accommodations">Accommodations</Link></li>
+                                        <li><Link to = "/Registry">Registry</Link></li>
+                                        <li><Link to = "/RSVP">RSVP</Link></li>
                                     </ul>
                                 </div>
                             </div>
