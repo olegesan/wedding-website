@@ -3,12 +3,10 @@
     width: 100%;
     background-color: #dfb3ae;
     position: absolute;
-
-
 }
 
 .form {
-    height: 630px;
+    height: 730px;
     width: 400px;
     background-color: #fff;
     margin: 100px auto;
@@ -48,6 +46,17 @@ select option[data-default] {
 
 select::placeholder {
     color: #333;
+}
+
+textarea {
+    color: #333;
+    display: block;
+    font-size: 15px;
+    width: 75%;
+    padding: 6px;
+    margin: 25px auto 20px;
+    width: 75%;
+    resize: none;
 }
 
 input:focus {
