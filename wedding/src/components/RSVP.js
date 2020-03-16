@@ -77,21 +77,25 @@ export class RSVP extends Component {
                         <p>A Beautiful Church</p>
                         <p>1000 Church Rd. Lawrenceville, GA 30019</p>
                         <hr className = "line"/>
-                        <input type = "email" placeholder = "Email" value={this.state.email} onChange = {(event)=>{this.setState({email:event.target.value})}}/>
-                        <div id = "left">
-                            <input type = "text" placeholder = "First Name" value={this.state.firstName} onChange = {(event)=>{this.setState({firstName:event.target.value})}}/>
-                        </div>
-                        <div id = "right">
-                            <input type = "text" placeholder = "Last Name" value={this.state.lastName} onChange = {(event)=>{this.setState({lastName:event.target.value})}}/>
-                        </div>
-                        <select id = "isAttending" value={this.state.attending}onChange = {(event)=>{this.setState({attending:event.target.value})}}>
-                            <option value = "" selected data-default>Are you attending?</option>
-                            <option value = "yes">Yes</option>
-                            <option value = "no">No</option>
-                        </select>
+                        <div className='form-wrapper'>
+                            <input className='one' type = "email" placeholder = "Email" value={this.state.email} onChange = {(event)=>{this.setState({email:event.target.value})}}/>
+                            <div className="input-line">
 
-                        <input type = "number" placeholder = "# of Guests" value={this.state.guests} onChange = {(event)=>{this.setState({guests:event.target.value})}}/>
-                        <textarea placeholder = "Suggestions" rows = "4" cols = "30" value={this.state.suggestions} onChange  = {event => {this.setState({suggestions:event.target.value})}}></textarea>
+                                    <input id='firstName'type = "text" placeholder = "First Name" value={this.state.firstName} onChange = {(event)=>{this.setState({firstName:event.target.value})}}/>
+
+
+                                    <input id='lastName'type = "text" placeholder = "Last Name" value={this.state.lastName} onChange = {(event)=>{this.setState({lastName:event.target.value})}}/>
+
+                            </div>
+                            <select id = "isAttending" value={this.state.attending}onChange = {(event)=>{this.setState({attending:event.target.value})}}>
+                                <option value = "" selected data-default>Are you attending?</option>
+                                <option value = "yes">Yes</option>
+                                <option value = "no">No</option>
+                            </select>
+
+                            <input className='one'type = "number" placeholder = "# of Guests" value={this.state.guests} onChange = {(event)=>{this.setState({guests:event.target.value})}}/>
+                            <textarea placeholder = "Suggestions" rows = "4" cols = "30" value={this.state.suggestions} onChange  = {event => {this.setState({suggestions:event.target.value})}}></textarea>
+                        </div>
 
                     </div>
                     <Link to = "/"><button className = "cancel" onClick = "scrollToTop()">Cancel</button></Link>

@@ -16,7 +16,7 @@
     box-shadow: 5px 5px 5px rgb(0, 0, 0, .25);
 }
 
-.form input {
+.form input.one {
     font-size: 15px;
     color: #23292E;
     padding: 6px;
@@ -30,14 +30,22 @@ select {
     -webkit-border-radius: 0px;
     background-position: 100% 50%;
     background-repeat: no-repeat;
+    width:75% ;
+    font-size: 15px;
+    color: rgb(206, 206, 206);
+    padding: 6px;
+    margin: 25px auto 20px;
 }
-
+select, input, textarea{
+    border:0.5px rgb(206, 206, 206) solid;
+}
 select, option {
-    color: #333;
+    color: rgb(134, 134, 134);
     padding: 6px;
     margin: 25px auto 20px;
     display: block;
-    width: 80%;
+    width: calc(75% + 12px);
+    box-sizing: border-box;
 }
 
 select option[data-default] {
@@ -45,7 +53,11 @@ select option[data-default] {
 }
 
 select::placeholder {
-    color: #333;
+    color: rgb(206, 206, 206);
+}
+select:focus, textarea:focus{
+    outline: none;
+    -webkit-appearance: none;
 }
 
 textarea {
@@ -121,14 +133,31 @@ button:focus {
 } 
 
 #left {
-    width: 45%;
-    margin-left: 27px;
+    width:45%
+    /* margin-left: 27px; */
 }
 
 #right {
+    width:45%;
+    /* margin-left: 183px;
+    margin-top: -57px; */
+}
+.input-line{
+    display:flex;
+    justify-content: space-between;
+    margin: 25px auto 20px;
+    width: calc(75% + 14px);
+    font-size: 15px;
+    color: #23292E;
+    box-sizing: border-box;
+}
+.input-line input{
+    font-size: 15px;
+    color: #23292E;
+    padding: 6px;
+    display: block;
     width: 45%;
-    margin-left: 183px;
-    margin-top: -56px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
@@ -163,6 +192,31 @@ button:focus {
     #right{
         width:100%;
         margin:0px;
+    }
+    .input-line{
+        display:flex;
+        flex-flow: column;
+        flex-basis: 1;
+        justify-content: space-between;
+        font-size: 15px;
+        color: #23292E;
+        width: 75%;
+        box-sizing: border-box;
+    }
+    .input-line input{
+        font-size: 15px;
+        color: #23292E;
+        padding: 6px;
+        display: block;
+        width: 100%;
+    }
+    #lastName{
+        margin: 25px auto 0px;
+    }
+    select, option {
+
+        width: calc(75%);
+
     }
 }
 @media (max-width: 320px) {
