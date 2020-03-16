@@ -10,13 +10,13 @@ export class RSVP extends Component {
             firstName:'',
             lastName:'',
             attending:'',
-            guests:''
+            guests:'',
+            suggestions:''
         }
     }
     componentDidMount() {
         this.refs.rsvp.scrollIntoView()
     }
-
     getInfo () {
         var dict = {
             email : this.email,
@@ -24,14 +24,11 @@ export class RSVP extends Component {
             lastName : this.lastName,
             attending : this.isAttending,
             guests : this.numGuests,
-            suggestions : this.suggestions
+            message : this.suggestions
         }
-        
         return(dict)
     }
-
     submitRSVP = (event) =>{
-
         fetch('http://localhost:5000/emails/rsvp',({
             method:'POST',
             headers: {
@@ -42,14 +39,12 @@ export class RSVP extends Component {
                  ...this.getInfo()
              })
         }))
-
         .then(res=>{
             console.log(res.ok)
             if(res.ok){
                 this.reset_form();
             }
         })
-        
     }
     reset_form = () =>{
         this.setState({email:'',
@@ -57,9 +52,9 @@ export class RSVP extends Component {
         lastName:'',
         guests:'',
         attending:'',
+        suggestions:''
     })
     }
-
     render() {
         return (
             <div className = "rsvp" ref = "rsvp">
@@ -91,7 +86,7 @@ export class RSVP extends Component {
                         </select>
 
                         <input type = "number" placeholder = "# of Guests" value={this.state.guests} onChange = {(event)=>{this.setState({guests:event.target.value})}}/>
-                        <textarea placeholder = "Suggestions" rows = "4" cols = "30" onChange  = {event => this.suggestions = event.target.value}></textarea>
+                        <textarea placeholder = "Suggestions" rows = "4" cols = "30" value={this.state.suggestions} onChange  = {event => {this.setState({suggestions:event.target.value})}}></textarea>
 
                     </div>
                     <Link to = "/"><button className = "cancel">Cancel</button></Link>

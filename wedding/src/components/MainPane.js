@@ -3,9 +3,14 @@ import { Slide } from 'react-slideshow-image';
 import './MainPane.css';
 
 const SlideImages = [
-    require('../res/couple1.jpg'),
-    require('../res/couple2.jpg'),
-    require('../res/couple3.jpg')
+    require('../res/om1.jpg'),
+    require('../res/om2.jpg'),
+    require('../res/om4.jpg'),
+    require('../res/om5.jpg'),
+    require('../res/om6.jpg'),
+    require('../res/om7.jpg'),
+    require('../res/om9.jpg'),
+    
 ]
 const properties = {
     duration: 5000,
