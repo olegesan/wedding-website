@@ -1,6 +1,6 @@
 #TODO:
-[]fix rsvp form for mobile
-- fix title for mobile (my iphone has one name on top of another and close together)
+- fix rsvp form for mobile
+- git fix title for mobile (my iphone has one name on top of another and close together)
 Thisnis what it looks like
 
 - put accomodations, reception, ceremony on one page.
