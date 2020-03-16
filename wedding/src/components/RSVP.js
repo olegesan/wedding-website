@@ -19,15 +19,17 @@ export class RSVP extends Component {
 
     getInfo () {
         var dict = {
-            email       : this.email,
-            firstName   : this.firstName,
-            lastName    : this.lastName,
+            email : this.email,
+            firstName : this.firstName,
+            lastName : this.lastName,
             attending : this.isAttending,
-            guests   : this.numGuests
+            guests : this.numGuests,
+            suggestions : this.suggestions
         }
         
         return(dict)
     }
+
     submitRSVP = (event) =>{
 
         fetch('http://localhost:5000/emails/rsvp',({
@@ -40,6 +42,7 @@ export class RSVP extends Component {
                  ...this.getInfo()
              })
         }))
+
         .then(res=>{
             console.log(res.ok)
             if(res.ok){
@@ -86,7 +89,10 @@ export class RSVP extends Component {
                             <option value = "yes">Yes</option>
                             <option value = "no">No</option>
                         </select>
+
                         <input type = "number" placeholder = "# of Guests" value={this.state.guests} onChange = {(event)=>{this.setState({guests:event.target.value})}}/>
+                        <textarea placeholder = "Suggestions" rows = "4" cols = "30" onChange  = {event => this.suggestions = event.target.value}></textarea>
+
                     </div>
                     <Link to = "/"><button className = "cancel">Cancel</button></Link>
                     <button className = "submit" onClick = {this.submitRSVP}>Submit</button>
