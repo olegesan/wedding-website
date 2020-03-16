@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom'
 import './RSVP.css'
 
 export class RSVP extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            email:'',
+            firstName:'',
+            lastName:'',
+            attending:'',
+            guests:''
+        }
+    }
     componentDidMount() {
         this.refs.rsvp.scrollIntoView()
     }
@@ -19,7 +29,7 @@ export class RSVP extends Component {
         return(dict)
     }
     submitRSVP = (event) =>{
-        console.log({...this.getInfo()});
+
         fetch('http://localhost:5000/emails/rsvp',({
             method:'POST',
             headers: {
@@ -29,12 +39,22 @@ export class RSVP extends Component {
              JSON.stringify({
                  ...this.getInfo()
              })
-            
         }))
         .then(res=>{
-            console.log(res)
+            console.log(res.ok)
+            if(res.ok){
+                this.reset_form();
+            }
         })
-        .catch(err => console.log(err))
+        
+    }
+    reset_form = () =>{
+        this.setState({email:'',
+        firstName:'',
+        lastName:'',
+        guests:'',
+        attending:'',
+    })
     }
 
     render() {
@@ -54,19 +74,19 @@ export class RSVP extends Component {
                         <p>A Beautiful Church</p>
                         <p>1000 Church Rd. Lawrenceville, GA 30019</p>
                         <span className = "line">_____________________________________</span>
-                        <input type = "email" placeholder = "Email" onChange = {event => this.email = event.target.value}/>
+                        <input type = "email" placeholder = "Email" value={this.state.email} onChange = {(event)=>{this.setState({email:event.target.value})}}/>
                         <div id = "left">
-                            <input type = "text" placeholder = "First Name" onChange = {event => this.firstName = event.target.value}/>
+                            <input type = "text" placeholder = "First Name" value={this.state.firstName} onChange = {(event)=>{this.setState({firstName:event.target.value})}}/>
                         </div>
                         <div id = "right">
-                            <input type = "text" placeholder = "Last Name" onChange = {event => this.lastName = event.target.value}/>
+                            <input type = "text" placeholder = "Last Name" value={this.state.lastName} onChange = {(event)=>{this.setState({lastName:event.target.value})}}/>
                         </div>
-                        <select id = "isAttending" onChange = {event => this.isAttending = event.target.value}>
+                        <select id = "isAttending" value={this.state.attending}onChange = {(event)=>{this.setState({attending:event.target.value})}}>
                             <option value = "" selected data-default>Are you attending?</option>
                             <option value = "yes">Yes</option>
                             <option value = "no">No</option>
                         </select>
-                        <input type = "number" placeholder = "# of Guests" onChange = {event => this.numGuests = event.target.value}/>
+                        <input type = "number" placeholder = "# of Guests" value={this.state.guests} onChange = {(event)=>{this.setState({guests:event.target.value})}}/>
                     </div>
                     <Link to = "/"><button className = "cancel">Cancel</button></Link>
                     <button className = "submit" onClick = {this.submitRSVP}>Submit</button>
