@@ -1,11 +1,11 @@
 # TODO:
-- fix rsvp form for mobile
+- DONE fix rsvp form for mobile
 - DONE git fix title for mobile (my iphone has one name on top of another and close together)
 - put accomodations, reception, ceremony on one page.
 - style with theme colors
 - deploy
 - add sticky menu, scroll spy
-- fix mobile menu links (don't work)
+- DONE fix mobile menu links (don't work)
 /* 
 ###TODO
 - Colors:

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import './Reception.css'
+import './Reception.css';
+
 
 export class Reception extends Component {
     componentDidMount() {
-        this.refs.reception.scrollIntoView()
+        // this.refs.reception.scrollIntoView()
     }
 
     OpenMap() {

@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import './Afterparty.css'
-
+import './Afterparty.css';
 export class Afterparty extends Component {
     componentDidMount() {
-        this.refs.afterparty.scrollIntoView()
+        // this.refs.afterparty.scrollIntoView()
     }
 
     OpenMap() {

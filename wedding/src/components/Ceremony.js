@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './Ceremony.css'
 
+
 export class Ceremony extends Component {
     componentDidMount() {
-        this.refs.ceremony.scrollIntoView()
+        // this.refs.ceremony.scrollIntoView()
     }
 
     OpenMap() {
@@ -16,6 +17,7 @@ export class Ceremony extends Component {
     render() {
         return (
             <div className = "ceremony" ref = "ceremony">
+
                 <div className = 'padding' id = "ceremony-padding"/>
                 <div className = "image-wrapper-ceremony image-wrapper">
 

@@ -8,6 +8,7 @@ import MainPane from './components/MainPane'
 import Ceremony from './components/Ceremony'
 import Reception from './components/Reception'
 import Afterparty from './components/Afterparty'
+import TopPane from'./components/TopPane';
 
 function Head() {
   return (
@@ -35,15 +36,28 @@ class App extends Component {
 
         <Head/>
         <BrowserRouter>
-          <Header className = "header-nav-bar" handleEnter = {this.handleEnter}></Header>
-            <MainPane className={"main-pane"}/>
-            {/* <Ceremony/>
+        <Route exact path='/'>
+            <TopPane/>
+            <Ceremony/>
             <Reception/>
-            <Afterparty/> */}
-          <Route exact path = "/RSVP" render = {() => <RSVP className = "rsvp"/>}/>
-          <Route exact path = "/Ceremony" render = {() => <Ceremony/>}/>
-          <Route exact path = "/Reception" render = {() => <Reception/>}/>
-          <Route exact path = "/Afterparty" render = {() => <Afterparty/>}/>
+            <Afterparty/>
+        </Route>
+          <Route exact path = "/RSVP">
+            <TopPane/>
+            <RSVP className = "rsvp"/>
+          </Route>
+          <Route exact path = "/Ceremony">
+            <TopPane/>
+            <Ceremony/>
+          </Route>
+          <Route exact path = "/Reception" >
+            <TopPane/>
+            <Reception/>
+          </Route>
+          <Route exact path = "/Afterparty" >
+            <TopPane/>
+            <Afterparty/>
+          </Route>
         </BrowserRouter>
         <body/>
       </div>
