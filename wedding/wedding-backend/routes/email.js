@@ -26,48 +26,73 @@ router.post('/', (req,res)=>{
         message:'hello Ruben'
     })
 })
-router.post('/rsvp', (req,res)=>{
+router.post('/rsvp', async function handler(req,res){
 
-    let data = sendEmail(req);
-
-    let db = new sql.Database('./db/rsvp_info.db', (err)=>{
-        if(err){
-            console.log(`We've got the following error: ${err}`);
-        };
-        console.log("Connected to rsvp_info db");
-    })
+    let data = await sendEmail(req);
+    if (data === 'error'){
+        res.status(500).send('something went terribly wrong');
+        console.log('couldnt send those emails')
+        return;
+    }
+    let db =  await handleDbConnect()
+    
+    console.log(db)
+    let add_to_db_err;
     db.run(`INSERT INTO rsvp_info (firstName, lastName, email, attending, message, numOfGuests)
-            VALUES('${data.firstName}', '${data.lastName}', '${data.email}', '${data.attending}', '${data.message}', '${data.numOfGuests}')`)
-    db.close((err)=>{
-        if(err){
-            console.log(`We've got the following error: ${err}`);
-        };
-        console.log("Closed connection to rsvp_info db");
-    });
+            VALUES('${data.firstName}', '${data.lastName}', '${data.email}', '${data.attending}', '${data.message}', '${data.numOfGuests}')`,[], async (err)=>{
+                if(err){
+                    console.log('we encountered an error');
+                    console.log(err)
+                    add_to_db_err = true;
+                    // res.status(500).send('something went terribly wrong')
+                }else{
+                    add_to_db_err = false;
+                }
+                console.log(add_to_db_err)
+            })
+    await new Promise((res,rej)=>{setTimeout(res,1000)});
+    console.log(add_to_db_err)
+    let closeDb = await handleDbClose(db)
+    if(closeDb==200 && !add_to_db_err){
+        res.status(200).send('we added your info to the DB');
+    }else{
+        res.status(500).send('something went terribly wrong')
+        console.log('did not add info to DB')
+    };
 
-    res.send('yep')
+    
 })
-router.get('/rsvp/db_info',(req,res)=>{
-    let db = new sql.Database('./db/rsvp_info.db', (err)=>{
-        if(err){
-            console.log(`We've got the following error: ${err}`);
-        };
-        console.log("Connected to rsvp_info db");
-    })
+router.get('/rsvp/db_info', async (req,res)=>{
+    let db = await handleDbConnect();
     db.all(`SELECT * FROM rsvp_info`, [], (err, rows)=>{
         rows.map(row =>{
             console.log(row)
         })
         res.json({db_info:rows})
     })
-    db.close((err)=>{
-        if(err){
-            console.log(`We've got the following error: ${err}`);
-        };
-        console.log("Closed connection to rsvp_info db");
-    });
+    handleDbClose(db)
 })
-const sendEmail = (req)=>{
+router.get('/rsvp/db_info/:email',async (req,res)=>{
+    let email = req.params.email;
+
+    let db = await handleDbConnect();
+    if(email==='all'){
+        db.run(`DELETE FROM rsvp_info`, [], (err)=>{
+            if(err){
+                console.log(err)
+            }
+        }) 
+    }else{
+        db.run(`DELETE FROM rsvp_info WHERE email='${email}'`, [], (err)=>{
+            if(err){
+                console.log(err)
+            }
+        })
+    }
+   handleDbClose(db);
+    res.redirect('/emails/rsvp/db_info')
+})
+async function sendEmail(req){
     let data = {
         firstName:req.body.firstName,
         lastName:req.body.lastName,
@@ -95,15 +120,54 @@ const sendEmail = (req)=>{
         <p>${email}<p>`,
       };
       data.attending = data.attending==='yes'?1:0;
-      console.log(data);
-      sgMail.send(msg)
-      .then(()=>{
-          console.log('sent successfully')
-      });
-    return data;
+      return data
+    //   let output = await sgMail.send(msg)
+    //   .then(()=>{
+    //       console.log('sent successfully')
+    //       return data;
+    //   })
+    //   .catch(err=>{
+    //       console.log(err)
+    //       return 'error'
+    //   })
+    //   return output;
+        
+    
       
 }
+async function handleDbClose(db){
+    return new Promise(async (resolve,reject) =>{
+        let error;
+        await db.close(err=>{
+            if(err){
+                console.log(`We've got the following error: ${err}`);
+                error = true;
+            }else{
+                error = false;
+                console.log("Closed connection to rsvp_info db");
+            } 
+        })
+        error? reject(500):resolve(200);
+        
 
+    })
+
+}
+async function handleDbConnect(){
+     
+    return new Promise((res,rej)=>{
+        let db = new sql.Database('./db/rsvp_info.db',(err)=>{
+                if(err){
+                    console.error(`We've got the following error: ${err}`);
+                    return 'error'
+                };
+                console.log("Connected to rsvp_info db")
+
+            })
+            res(db)
+            
+    });
+}
 // db.run(`CREATE TABLE rsvp_info(
 //     guest_id INTEGER PRIMARY KEY,
 //     firstName TEXT,
