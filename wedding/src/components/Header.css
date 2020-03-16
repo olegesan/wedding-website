@@ -122,7 +122,7 @@ a:visited {
     .header-mobile {
         display: block;
         text-transform: uppercase;
-        font-size: small;
+        font-size: smaller;
     }
 
     .header-inner {
@@ -139,7 +139,7 @@ a:visited {
 
     :root {
         --primary-color: transparent;
-        --overlay-color: rgba(216, 153, 187 , 0.85);
+        --overlay-color: rgba(144, 163, 189 , 0.85);
         --menu-speed: 0.75s;
     }
     
