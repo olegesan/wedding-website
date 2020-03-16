@@ -9,20 +9,32 @@ export class RSVP extends Component {
 
     getInfo () {
         var dict = {
-            Email       : this.email,
-            FirstName   : this.firstName,
-            LastName    : this.lastName,
-            IsAttending : this.isAttending,
-            NumGuests   : this.numGuests
+            email       : this.email,
+            firstName   : this.firstName,
+            lastName    : this.lastName,
+            attending : this.isAttending,
+            guests   : this.numGuests
         }
-
-        console.log(dict["Email"])
-        console.log(dict["FirstName"])
-        console.log(dict["LastName"])
-        console.log(dict["IsAttending"])
-        console.log(dict["NumGuests"])
         
         return(dict)
+    }
+    submitRSVP = (event) =>{
+        console.log({...this.getInfo()});
+        fetch('http://localhost:5000/emails/rsvp',({
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+            body:
+             JSON.stringify({
+                 ...this.getInfo()
+             })
+            
+        }))
+        .then(res=>{
+            console.log(res)
+        })
+        .catch(err => console.log(err))
     }
 
     render() {
@@ -57,7 +69,7 @@ export class RSVP extends Component {
                         <input type = "number" placeholder = "# of Guests" onChange = {event => this.numGuests = event.target.value}/>
                     </div>
                     <Link to = "/"><button className = "cancel">Cancel</button></Link>
-                    <button className = "submit" onClick = {this.getInfo.bind(this)}>Submit</button>
+                    <button className = "submit" onClick = {this.submitRSVP}>Submit</button>
                 </div>
             </div>
         )
