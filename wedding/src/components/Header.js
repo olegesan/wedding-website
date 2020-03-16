@@ -5,10 +5,22 @@ import { Link } from 'react-router-dom'
 export class Header extends Component {
     constructor(props) {
         super (props)
+        this.state = {
+            checked: false
+        }
         this.handleKeyPress = this.handleKeyPress.bind(this)
         this.toggler = React.createRef()
     }
-
+    
+    handleMobileMenu = async e =>{
+        
+        if (!this.state.checked){
+            this.setState({checked:true})
+        }else{
+            await new Promise((res,rej)=>{setTimeout(res,400)})
+            this.setState({checked:false})
+        }
+    }
     handleKeyPress(e) {
         if (e.key === "Enter") {
             this.props.handleKeyPress(e.target.value)
@@ -57,13 +69,13 @@ export class Header extends Component {
                 </div>
                 <div className = "header-mobile">
                     <div id = "site-title-wrapper" data-content-field = "site-title">
-                        <h1 id = "site-title">
+                        <h1 id = "site-title" onClick={this.state.checked?this.handleMobileMenu:null}>
                             <Link to = "/" data-shrink-original-size = "30">Oleg & Makayla</Link>
                         </h1>
                     </div>
 
                     <div class="menu-wrap">
-                        <input type = "checkbox" className = "toggler" ref = {this.toggler}/>
+                        <input type = "checkbox" className = "toggler" ref = {this.toggler} checked={this.state.checked} onChange={event=>{console.log(this.toggler.current.checked)}} onClick={this.handleMobileMenu}/>
                         <div class="hamburger">
                             <div></div>
                         </div>
@@ -71,12 +83,12 @@ export class Header extends Component {
                             <div>
                                 <div>
                                     <ul>
-                                        <li><Link to = "/Ceremony">Ceremony</Link></li>
-                                        <li><Link to = "/Reception">Reception</Link></li>
-                                        <li><Link to = "/Afterparty">Afterparty</Link></li>
-                                        <li><Link to = "/Accommodations">Accommodations</Link></li>
-                                        <li><Link to = "/Registry">Registry</Link></li>
-                                        <li><Link to = "/RSVP">RSVP</Link></li>
+        <li><Link to = "/Ceremony" onClick={this.handleMobileMenu}>Ceremony </Link></li>
+                                        <li onClick={this.handleMobileMenu}><Link to = "/Reception" >Reception</Link></li>
+                                        <li onClick={this.handleMobileMenu}><Link to = "/Afterparty">Afterparty</Link></li>
+                                        <li onClick={this.handleMobileMenu}><Link to = "/Accommodations">Accommodations</Link></li>
+                                        <li onClick={this.handleMobileMenu}><Link to = "/Registry">Registry</Link></li>
+                                        <li onClick={this.handleMobileMenu}><Link to = "/RSVP">RSVP</Link></li>
                                     </ul>
                                 </div>
                             </div>
