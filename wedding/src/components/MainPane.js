@@ -33,7 +33,7 @@ class MainPane extends Component{
             )
         })
         return(
-            <div>
+            <div ref={this.props.stickyRef}>
                 <span className={'capture'}>We're Engaged!</span>
                 <Slide {...properties} >
 

@@ -16,7 +16,7 @@ export class Ceremony extends Component {
 
     render() {
         return (
-            <div className = "ceremony" ref = "ceremony">
+            <div id='Ceremony' className = "ceremony" ref = "ceremony">
 
                 <div className = 'padding' id = "ceremony-padding"/>
                 <div className = "image-wrapper-ceremony image-wrapper">

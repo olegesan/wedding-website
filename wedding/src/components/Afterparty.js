@@ -14,7 +14,7 @@ export class Afterparty extends Component {
 
     render() {
         return (
-            <div className = "afterparty" ref = "afterparty">
+            <div id='Afterparty' className = "afterparty" ref = "afterparty">
                 <div className = 'padding'/>
                 <div className = "image-wrapper-afterparty image-wrapper"/>
                 <div className = "info-wrapper">

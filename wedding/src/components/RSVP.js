@@ -62,7 +62,7 @@ export class RSVP extends Component {
     }
     render() {
         return (
-            <div className = "rsvp" ref = "rsvp">
+            <div id='RSVP' className = "rsvp" ref = "rsvp">
                 <div className = "form">
                     <div className = "info">
                         <h1>RSVP</h1>

@@ -16,7 +16,7 @@ export class Reception extends Component {
 
     render() {
         return (
-            <div className = "reception" ref =  "reception">
+            <div id='Reception' className = "reception" ref =  "reception">
                 <div className = 'padding' id = "reception-padding"/>
                 <div className = "image-wrapper-reception image-wrapper"/>
                 <div className = "info-wrapper">
