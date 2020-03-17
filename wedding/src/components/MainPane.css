@@ -69,9 +69,9 @@ h3 {
     filter:opacity(40%);
 }
 .capture{
-    opacity: 90%;
+    opacity: 95%;
     position:absolute;
-    color:rgb(220, 218, 252);
+    color:whitesmoke;
     width:calc(100% - 20px);
     margin:0px;
     margin-top:30vh;

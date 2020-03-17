@@ -7,6 +7,7 @@ import Ceremony from './components/Ceremony'
 import Reception from './components/Reception'
 import Afterparty from './components/Afterparty'
 import TopPane from'./components/TopPane';
+import Registry from './components/Registry';
 
 
 function Head() {
@@ -55,6 +56,9 @@ class App extends Component {
           <Route exact path = "/Afterparty" >
             <TopPane/>
             <Afterparty/>
+          </Route>
+          <Route exact path = '/registry'>
+            <Registry/>
           </Route>
         </BrowserRouter>
         <body/>
