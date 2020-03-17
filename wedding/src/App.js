@@ -2,13 +2,13 @@
 import React, {Component} from 'react'
 import './App.css'
 import { BrowserRouter, Route} from 'react-router-dom'
-import Header from './components/Header'
 import RSVP from './components/RSVP'
-import MainPane from './components/MainPane'
 import Ceremony from './components/Ceremony'
 import Reception from './components/Reception'
 import Afterparty from './components/Afterparty'
 import TopPane from'./components/TopPane';
+import Scrollspy from 'react-scrollspy';
+
 
 function Head() {
   return (
@@ -22,7 +22,6 @@ function Head() {
     </html>
   )
 }
-
 class App extends Component {
   handleEnter = (e) => {
       this.setState({
@@ -33,14 +32,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <Head/>
         <BrowserRouter>
         <Route exact path='/'>
-            <TopPane/>
-            <Ceremony/>
-            <Reception/>
-            <Afterparty/>
+              <TopPane />
+              <Ceremony />
+              <Reception />
+              <Afterparty />
+                  
         </Route>
           <Route exact path = "/RSVP">
             <TopPane/>

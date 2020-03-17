@@ -99,7 +99,7 @@ export class RSVP extends Component {
 
                     </div>
                     <Link to = "/"><button className = "cancel button-rsvp" onClick = "scrollToTop()">Cancel</button></Link>
-                    <button className = "submit" className='button-rsvp' onClick = {this.submitRSVP}>Submit</button>
+                    <button className = "submit button-rsvp" onClick = {this.submitRSVP}>Submit</button>
                 </div>
             </div>
         )

@@ -12,11 +12,11 @@ h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
+    min-height: 100vh ;
     max-height:100vh;
 }
 .images-wrap{
-    height: 800px;
+    min-height: 100vh ;
     max-height:100vh;
 }
 .images-wrap > .active{
@@ -55,19 +55,23 @@ h3 {
     background: none;
 }
 .react-slideshow-container + div.indicators{
-    margin-top:-20px
+    margin-top:-15px
 }
 
 .indicators > div{
     z-index: 99;
 }
 .background-tint {
-    background-color: rgba(59, 160, 200, 0.1);
-    background-blend-mode: multiply;
+    /* background-color: #607267; */
+    background-color: rgb(52, 69, 111);
+    /* background-blend-mode:overlay; */
+    /* background-blend-mode:multiply; */
+    filter:opacity(40%);
 }
 .capture{
+    opacity: 90%;
     position:absolute;
-    color:white;
+    color:rgb(220, 218, 252);
     width:calc(100% - 20px);
     margin:0px;
     margin-top:30vh;
@@ -79,10 +83,10 @@ h3 {
 @media (max-width:1000px) {
     .each-slide > div {
 
-        height: 600px;
+        min-height: 600px;
     }
     .images-wrap{
-        height: 600px;
+        min-height: 600px;
         max-height:100vh;
     }
     .capture{
@@ -92,7 +96,7 @@ h3 {
 }
 @media (max-width: 767px) {
     .each-slide > div {
-        height: 300px;
+        min-height: 300px;
     }
     .each-slide span{
         text-shadow: black 0px 0px 1px;
@@ -103,7 +107,7 @@ h3 {
         font-size: 3em;
     }
     .images-wrap{
-        height: 300px;
+        min-height: 300px;
         max-height:100vh;
     }
 }

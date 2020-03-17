@@ -182,7 +182,7 @@ hr.line {
         margin: 0px auto 0px auto;
         border-top:2px #999 dashed;
     }
-    button {
+    .button-rsvp {
         width: 175px;
     }
     #left{
@@ -234,7 +234,7 @@ hr.line {
         margin: 0px auto 0px auto;
         border-top:2px #999 dashed;
     }
-    button {
+    .button-rsvp {
         width: 155px;
     }
     
