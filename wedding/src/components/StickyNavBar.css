@@ -1,47 +1,47 @@
-
-.scrollspy{
-    position:absolute;
-    top:0px;
-    background-color:#34456F;
-    width:100%;
-    display:flex;
-    justify-content:center;
+.scrollspy {
+    position: absolute;
+    top: 0px;
+    background-color: #34456F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    z-index:1002;
-    padding:10px;
-    
+    z-index: 1002;
+    padding: 10px;
 }
-.scrollspy.show{
-    display:flex;
-    animation: moveDown  0.5s ease-in-out;
-    
-    
+
+.scrollspy.show {
+    display: flex;
+    animation: moveDown 0.5s ease-in-out;
 }
+
 .hidden {
-    /* display:none; */
-    visibility: hidden;
-    transition:0.5s;
+    display: flex;
+    animation: moveUp 0.5s forwards;
 }
-span a{
-    color:#90A3BD;
+
+span a {
+    color: #90A3BD;
 }
-.is-current a{
-    color:whitesmoke;
+
+.is-current a {
+    color: whitesmoke;
 }
+
 @keyframes moveDown {
     from {
-      transform: translateY(-5rem);
+        transform: translateY(-5rem);
     }
     to {
-      transform: translateY(0rem);
+        transform: translateY(0rem);
     }
-  }
-@keyframes moveUp{
+}
+
+@keyframes moveUp {
     from {
         transform: translateY(0rem);
-      }
-      to {
+    }
+    to {
         transform: translateY(-5rem);
-        display:none;
-      }
+    }
 }
