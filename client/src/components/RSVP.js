@@ -29,7 +29,7 @@ export class RSVP extends Component {
         return(dict)
     }
     submitRSVP = (event) =>{
-        fetch('http://localhost:5000/emails/rsvp',({
+        fetch('/emails/rsvp',({
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'
