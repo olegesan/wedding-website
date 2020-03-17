@@ -1,0 +1,66 @@
+.ceremony {
+    min-height: 101vh;
+    height:auto;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    width: 100%;
+    color: #23292E;
+    background-color: #C1BFE2;
+    margin-top: -2px;
+}
+
+.image-wrapper-ceremony {
+    display: block;
+    background-image: url('../res/rings1.jpg');
+    
+}
+
+.padding {
+    padding-top: 100px;
+}
+#ceremony-padding{
+    background-color: #C1BFE2;
+}
+
+.info-wrapper {
+    margin-top: 50px;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#bold {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#button {
+    color: #607267;
+    width: 10%;
+    border: none;
+    background-color: transparent;
+}
+
+#button:hover {
+    background-color: transparent;
+}
+@media (max-width: 767px){
+    .image-wrapper{
+
+        height: 400px;
+        width: 400px;
+
+    }
+}
+@media (max-width: 400px){
+    .image-wrapper{
+
+        height: 300px;
+        width: 300px;
+
+    }
+}

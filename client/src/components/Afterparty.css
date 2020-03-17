@@ -1,0 +1,55 @@
+.afterparty {
+    min-height: 101vh;
+    width: 100%;
+    color: #23292E;
+    background-color: #90A3BD;
+    margin-top: -2px;
+}
+
+.image-wrapper-afterparty {
+    display: block;
+    background-image: url('../res/test_photo_4.jpg');
+}
+
+
+.padding {
+    padding-top: 100px;
+    background-color: #90A3BD;
+}
+
+.info-wrapper {
+    margin-top: 50px;
+}
+
+#bold {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#button {
+    color: #607267;
+    width: 10%;
+    border: none;
+    background-color: transparent;
+}
+
+#button:hover {
+    background-color: transparent;
+}
+@media (max-width: 767px){
+    .image-wrapper{
+
+        height: 400px;
+        width: 400px;
+
+    }
+}
+@media (max-width: 400px){
+    .image-wrapper{
+
+        height: 300px;
+        width: 300px;
+
+    }
+}

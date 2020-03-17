@@ -1,0 +1,76 @@
+.registry-img{
+    width:100%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    background-position: center;
+}
+.registry-img img{
+    width:100%;
+}
+.registry-capture-small{
+    color:#fff;
+    position:absolute;
+    display:block;
+    margin: 80vh auto;
+    text-align: center;
+    width:100%;
+    font-size: 2em;
+}
+
+.registry-pane-parent{
+    background-color:rgb(207, 221, 240);
+}
+.registry-pane-text{
+    margin:0px;
+    padding:0px;
+    padding-top:20px;
+    font-size:2em;
+}
+.registry-pane{
+    height:100%;
+    width:100%;
+    background-color:rgb(207, 221, 240);
+    display:flex;
+    flex-grow:0;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+
+.store-container a img{
+    width:500px;
+}
+@media(max-width:767px){
+    .registry-capture-small{
+        color:#fff;
+        margin: 35vh auto;
+        text-align: center;
+        width:100%;
+        font-size: 1.5em;
+    }
+    .registry-img{
+        min-height:400px;
+    }
+    .store-container a img{
+        width:300px;
+    }
+    .registry-pane-text{
+        font-size:1.5em;
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+@media(max-width:400px){
+    .registry-capture-small{
+        color:#fff;
+        margin: 50vh auto;
+        text-align: center;
+        width:100%;
+        font-size: 1em;
+    }
+    .registry-img{
+        min-height:400px;
+    }
+}

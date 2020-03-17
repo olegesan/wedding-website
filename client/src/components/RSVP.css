@@ -1,0 +1,241 @@
+.rsvp {
+    height: auto;
+    width: 100%;
+    background-color: #C1BFE2;
+    position: absolute;
+}
+
+.form {
+    height: auto;
+    width: 400px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 10px;
+    color: #23292E;
+    padding: 0;
+    /* box-shadow: 5px 5px 5px rgb(0, 0, 0, .25); */
+}
+
+.form input.one {
+    font-size: 15px;
+    color: #23292E;
+    padding: 6px;
+    margin: 25px auto 20px;
+    display: block;
+    width: 75%;
+}
+
+select {
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    width:75% ;
+    font-size: 15px;
+    color: rgb(206, 206, 206);
+    padding: 6px;
+    margin: 25px auto 20px;
+}
+select, input, textarea{
+    border:0.5px rgb(206, 206, 206) solid;
+}
+select, option {
+    color: rgb(134, 134, 134);
+    padding: 6px;
+    margin: 25px auto 20px;
+    display: block;
+    width: calc(75% + 12px);
+    box-sizing: border-box;
+}
+
+select option[data-default] {
+    display: none;
+}
+
+select::placeholder {
+    color: rgb(206, 206, 206);
+}
+select:focus, textarea:focus{
+    outline: none;
+    -webkit-appearance: none;
+}
+
+textarea {
+    color: #333;
+    display: block;
+    font-size: 15px;
+    width: 75%;
+    padding: 6px;
+    margin: 25px auto 20px;
+    width: 75%;
+    resize: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.info {
+    padding: 10px;
+}
+
+h1, h2, p, span {
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Parisienne', 'Josefin Sans', sans-serif;
+}
+
+hr.line {
+    margin: 0px auto 20px auto;
+    border-top:2px #999 dashed;
+ 
+
+}
+
+.button button {
+    display: inline-block;
+    width: 400px;
+}
+
+.button-rsvp {
+    color: #fff;
+    background-color: #34456F;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 32px;
+    width: 200px;
+    margin: -8px auto 0px auto;
+    float: left;
+}
+
+.button-rsvp.cancel {
+    border-radius: 0px 0px 0px 10px;
+    border-right: solid 1px #90A3BD;
+}
+
+.button-rsvp.submit {
+    border-radius: 0px 0px 10px 0px;
+}
+
+.button-rsvp:hover {
+    background-color: #90A3BD;
+    transition: .5s;
+}
+
+.button-rsvp:focus {
+    outline: 0;
+} 
+
+#left {
+    width:45%
+    /* margin-left: 27px; */
+}
+
+#right {
+    width:45%;
+    /* margin-left: 183px;
+    margin-top: -57px; */
+}
+.input-line{
+    display:flex;
+    justify-content: space-between;
+    margin: 25px auto 20px;
+    width: calc(75% + 14px);
+    font-size: 15px;
+    color: #23292E;
+    box-sizing: border-box;
+}
+.input-line input{
+    font-size: 15px;
+    color: #23292E;
+    padding: 6px;
+    display: block;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .rsvp {
+        width: 100%;
+        height: auto;
+        background-color: #C1BFE2;
+        position: absolute;
+    }
+
+    .form {
+        height: auto;
+        width: 350px;
+        background-color: #fff;
+        margin: 100px auto;
+        border-radius: 10px;
+        color: #23292E;
+        padding: 0;
+        /* box-shadow: 5px 5px 5px rgb(0, 0, 0, .25); */
+    }
+    hr.line {
+        margin: 0px auto 0px auto;
+        border-top:2px #999 dashed;
+    }
+    .button-rsvp {
+        width: 175px;
+    }
+    #left{
+        width:100%;
+        margin:0px;
+    }
+    #right{
+        width:100%;
+        margin:0px;
+    }
+    .input-line{
+        display:flex;
+        flex-flow: column;
+        flex-basis: 1;
+        justify-content: space-between;
+        font-size: 15px;
+        color: #23292E;
+        width: 75%;
+        box-sizing: border-box;
+    }
+    .input-line input{
+        font-size: 15px;
+        color: #23292E;
+        padding: 6px;
+        display: block;
+        width: 100%;
+    }
+    #lastName{
+        margin: 25px auto 0px;
+    }
+    select, option {
+
+        width: calc(75%);
+
+    }
+}
+@media (max-width: 320px) {
+    .form {
+        height: auto;
+        width: 310px;
+        background-color: #fff;
+        margin: 100px auto;
+        border-radius: 10px;
+        color: #23292E;
+        padding: 0;
+        /* box-shadow: 5px 5px 5px rgb(0, 0, 0, .25); */
+    }
+    hr.line {
+        margin: 0px auto 0px auto;
+        border-top:2px #999 dashed;
+    }
+    .button-rsvp {
+        width: 155px;
+    }
+}

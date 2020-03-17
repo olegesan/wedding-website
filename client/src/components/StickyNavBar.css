@@ -1,0 +1,47 @@
+.scrollspy {
+    position: absolute;
+    top: 0px;
+    background-color: #34456F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+    padding: 10px;
+}
+
+.scrollspy.show {
+    display: flex;
+    animation: moveDown 0.5s ease-in-out;
+}
+
+.hidden {
+    display: flex;
+    animation: moveUp 0.5s forwards;
+}
+
+span a {
+    color: #90A3BD;
+}
+
+.is-current a {
+    color: whitesmoke;
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-5rem);
+    }
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(0rem);
+    }
+    to {
+        transform: translateY(-5rem);
+    }
+}

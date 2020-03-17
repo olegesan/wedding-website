@@ -1,0 +1,115 @@
+.slide-container {
+    width: 70%;
+    margin: auto; }
+
+h3 {
+    text-align: center; }
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh ;
+    max-height:100vh;
+}
+.images-wrap{
+    min-height: 100vh ;
+    max-height:100vh;
+}
+.images-wrap > .active{
+    width:100vw !important;
+}
+.each-slide span {
+    padding: 20px;
+    font-size: 9em;
+    text-align: center;
+    color:white;
+}
+
+.each-fade {
+    display: flex;
+}
+
+.each-fade .image-container {
+    width: 75%;
+    overflow: hidden;
+}
+
+.each-fade .image-container img {
+    width: 100%;
+}
+
+.each-fade h2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+}
+.react-slideshow-container .nav, .indicators{
+    opacity:20%;
+    background: none;
+}
+.react-slideshow-container + div.indicators{
+    margin-top:-15px
+}
+
+.indicators > div{
+    z-index: 99;
+}
+.background-tint {
+    /* background-color: #607267; */
+    background-color: rgb(52, 69, 111);
+    /* background-blend-mode:overlay; */
+    /* background-blend-mode:multiply; */
+    filter:opacity(40%);
+}
+.capture{
+    opacity: 95%;
+    position:absolute;
+    color:whitesmoke;
+    width:calc(100% - 20px);
+    margin:0px;
+    margin-top:30vh;
+    font-size: 9em;
+    z-index: 2;
+    padding:10px;
+    text-shadow: rgba(32, 36, 28, 0.97) 0px 0px 1px;
+}
+@media (max-width:1000px) {
+    .each-slide > div {
+
+        min-height: 600px;
+    }
+    .images-wrap{
+        min-height: 600px;
+        max-height:100vh;
+    }
+    .capture{
+        margin-top:30vh;
+        font-size: 7em;
+    }
+}
+@media (max-width: 767px) {
+    .each-slide > div {
+        min-height: 300px;
+    }
+    .each-slide span{
+        text-shadow: black 0px 0px 1px;
+        font-size: 3em;
+    }
+    .capture{
+        margin-top:15vh;
+        font-size: 3em;
+    }
+    .images-wrap{
+        min-height: 300px;
+        max-height:100vh;
+    }
+}
+
+

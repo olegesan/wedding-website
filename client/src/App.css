@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color:whitesmoke;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: #C1BFE2; */
+  background: #34456F;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
