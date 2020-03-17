@@ -1,7 +1,6 @@
 import React, {useRef, useState,useEffect} from "react";
 import Header from './Header';
 import MainPane from './MainPane';
-import Scrollspy from 'react-scrollspy'
 import StickyNavBar from './StickyNavBar';
 
 

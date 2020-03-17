@@ -7,7 +7,6 @@ import Ceremony from './components/Ceremony'
 import Reception from './components/Reception'
 import Afterparty from './components/Afterparty'
 import TopPane from'./components/TopPane';
-import Scrollspy from 'react-scrollspy';
 
 
 function Head() {
