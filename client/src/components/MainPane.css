@@ -51,7 +51,7 @@ h3 {
     background: #adceed;
 }
 .react-slideshow-container .nav, .indicators{
-    opacity:20%;
+    opacity:.2;
     background: none;
 }
 .react-slideshow-container + div.indicators{
@@ -69,7 +69,7 @@ h3 {
     filter:opacity(40%);
 }
 .capture{
-    opacity: 95%;
+    opacity: .95;
     position:absolute;
     color:whitesmoke;
     width:calc(100% - 20px);
