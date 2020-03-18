@@ -5,7 +5,7 @@ const   express = require('express'),
         email = require('./routes/email.js');
         path = require('path')
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
