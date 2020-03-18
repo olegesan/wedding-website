@@ -156,7 +156,7 @@ async function handleDbClose(db){
 async function handleDbConnect(){
      
     return new Promise((res,rej)=>{
-        let db = new sql.Database('./db/rsvp_info.db',(err)=>{
+        let db = new sql.Database('./db/rsvp_info.db',sql.OPEN_READWRITE,(err)=>{
                 if(err){
                     console.error(`We've got the following error: ${err}`);
                     return 'error'
