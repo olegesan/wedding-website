@@ -1,0 +1,5 @@
+.DS_STORE
+app.yaml
+.gcloudignore
+./client/.DS_Store
+client/.DS_Store

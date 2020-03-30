@@ -10,17 +10,6 @@ import TopPane from'./components/TopPane';
 import Registry from './components/Registry';
 
 
-// function Head() {
-//   return (
-//     <html>
-//       <head>
-//         <style>
-          
-//         </style>
-//       </head>
-//     </html>
-//   )
-// }
 class App extends Component {
   handleEnter = (e) => {
       this.setState({
@@ -31,7 +20,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Head/> */}
         <BrowserRouter>
         <Route exact path='/'>
               <TopPane />
