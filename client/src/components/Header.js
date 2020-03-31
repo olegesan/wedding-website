@@ -83,9 +83,9 @@ export class Header extends Component {
                             <div>
                                 <div>
                                     <ul>
-                                        <li><Link to = "/Ceremony" onClick={this.handleMobileMenu}>Ceremony </Link></li>
-                                        <li onClick={this.handleMobileMenu}><Link to = "/Reception" >Reception</Link></li>
-                                        <li onClick={this.handleMobileMenu}><Link to = "/Afterparty">Afterparty</Link></li>
+                                        <li onClick={this.handleMobileMenu}><a href="#Ceremony">Ceremony</a></li>
+                                        <li onClick={this.handleMobileMenu}><a href="#Reception">Reception</a>
+                                        <li onClick={this.handleMobileMenu}><a href="#Afterparty">Afterparty</a>
                                         <li onClick={this.handleMobileMenu}><Link to = "/Accommodations">Accommodations</Link></li>
                                         <li onClick={this.handleMobileMenu}><Link to = "/Registry">Registry</Link></li>
                                         <li onClick={this.handleMobileMenu}><Link to = "/RSVP">RSVP</Link></li>
