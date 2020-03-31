@@ -8,7 +8,7 @@ import Reception from './components/Reception'
 import Afterparty from './components/Afterparty'
 import TopPane from'./components/TopPane';
 import Registry from './components/Registry';
-import Accomodations from './components/Accomodations';
+import Accommodations from './components/Accommodations';
 
 
 class App extends Component {
@@ -46,7 +46,7 @@ class App extends Component {
             <Afterparty/>
           </Route>
           <Route exact path = "/accommodations">
-            <Accomodations/>
+            <Accommodations/>
           </Route>
           <Route exact path = '/registry'>
             <Registry/>
