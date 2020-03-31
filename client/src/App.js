@@ -8,7 +8,7 @@ import Reception from './components/Reception'
 import Afterparty from './components/Afterparty'
 import TopPane from'./components/TopPane';
 import Registry from './components/Registry';
-import Accommodations from './components/Accommodations';
+import Accommodations from './components/Accommodations.js';
 
 
 class App extends Component {
