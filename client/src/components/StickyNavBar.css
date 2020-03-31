@@ -14,7 +14,9 @@
     display: flex;
     animation: moveDown 0.5s ease-in-out;
 }
-
+.none{
+    display:none;
+}
 .hidden {
     display: flex;
     animation: moveUp 0.5s forwards;

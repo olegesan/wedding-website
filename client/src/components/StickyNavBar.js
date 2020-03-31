@@ -1,19 +1,24 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Scrollspy from 'react-scrollspy';
 import './StickyNavBar.css'
 
 
 function StickyNavBar (props){
     const[sticky, setSticky] = useState(false);
+    const[beenSticky, setBeenSticky] = useState(false);
     useEffect(()=>{
         if (props.sticky){
             setSticky(true)
+            setBeenSticky(true)
         }else{
             setSticky(false)
         }
-    })
+    },[props.sticky])
         let sticky_state = () =>{
-            if (sticky){
+            if(!beenSticky){
+                return 'none'
+            }
+            else if (sticky){
                 return 'show'
             }else{
                 return 'hidden'
