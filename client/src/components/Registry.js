@@ -6,7 +6,9 @@ import './Registry.css';
 const img = require("../res/om_registry.jpg");
 const store_names = [['amazon','https://www.amazon.com/wedding'], ['target','https://www.target.com/gift-registry/wedding-registry']];
 class Registry extends Component{
-    
+    componentDidMount() {
+        this.refs.registry.scrollIntoView()
+    }
     render(){
         const stores_div = store_names.map((store_info,key)=>{
             let store_img = require(`../res/${store_info[0]}.png`)
@@ -24,7 +26,7 @@ class Registry extends Component{
             <div id='Registry'>
                 <Header/>
                 <StickyNavBar/>
-                <span className='capture'>We are starting small!</span>
+                <span className='capture' ref='registry'>We are starting small!</span>
                 <span className='registry-capture-small'>And hope you could help us :)</span>
                 <div className='registry-img background-tint' style={{'backgroundImage':`url('${img}')`}}/>
                 <div className='registry-pane-parent'>

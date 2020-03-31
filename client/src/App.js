@@ -33,7 +33,7 @@ class App extends Component {
             <TopPane/>
             <RSVP className = "rsvp"/>
           </Route>
-          <Route exact path = "/Ceremony">
+          {/* <Route exact path = "/Ceremony">
             <TopPane/>
             <Ceremony/>
           </Route>
@@ -44,7 +44,7 @@ class App extends Component {
           <Route exact path = "/Afterparty" >
             <TopPane/>
             <Afterparty/>
-          </Route>
+          </Route> */}
           <Route exact path = "/accommodations">
             <Accommodations/>
           </Route>

@@ -41,13 +41,13 @@ export class Header extends Component {
                             <div className = "nav-left">
                                 <nav className = "nav-bar">
                                     <div className = "nav-item">
-                                        <Link to = "/Ceremony">Ceremony</Link>
+                                        <a href= "#Ceremony">Ceremony</a>
                                     </div>
                                     <div className = "nav-item">
-                                        <Link to = "/Reception">Reception</Link>
+                                        <a href="#Reception">Reception</a>
                                     </div>
                                     <div className = "nav-item">
-                                        <Link to = "/Afterparty">Afterparty</Link>
+                                        <a href="#Afterparty">Afterparty</a>
                                     </div>
                                 </nav>
                             </div>
