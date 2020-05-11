@@ -67,7 +67,7 @@ export class RSVP extends Component {
                     <div className = "info">
                     <h1>RSVP</h1>
                         <h2>for the wedding of</h2>
-                        <h1>Oleg & Makayla</h1>
+                        <h1>John & Diana</h1>
                         <hr className = "line"/>
                         <h2>Details</h2>
                         <p>Saturday, March 14, 2020</p>

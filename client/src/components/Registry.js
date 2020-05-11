@@ -4,7 +4,8 @@ import StickyNavBar from './StickyNavBar';
 import './Registry.css';
 
 const img = require("../res/om_registry.jpg");
-const store_names = [['amazon','https://www.amazon.com/wedding'], ['target','https://www.target.com/gift-registry/wedding-registry']];
+const store_names = [['amazon','https://www.amazon.com/wedding'],
+['target','https://www.target.com/gift-registry/wedding-registry']];
 class Registry extends Component{
     componentDidMount() {
         this.refs.registry.scrollIntoView()

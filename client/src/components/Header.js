@@ -33,7 +33,7 @@ export class Header extends Component {
                 <div className = "header-inner">
                     <div id = "site-title-wrapper" data-content-field = "site-title">
                         <h1 id = "site-title">
-                            <Link to = "/">Oleg & Makayla</Link>
+                            <Link to = "/">John & Diana</Link>
                         </h1>
                     </div>
                     <div id = "header-nav">
@@ -70,7 +70,7 @@ export class Header extends Component {
                 <div className = "header-mobile">
                     <div id = "site-title-wrapper" data-content-field = "site-title">
                         <h1 id = "site-title" onClick={this.state.checked?this.handleMobileMenu:null}>
-                            <Link to = "/" data-shrink-original-size = "30">Oleg & Makayla</Link>
+                            <Link to = "/" data-shrink-original-size = "30">John & Diana</Link>
                         </h1>
                     </div>
 
