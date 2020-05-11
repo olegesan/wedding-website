@@ -3,7 +3,7 @@ import Header from './Header';
 import StickyNavBar from './StickyNavBar';
 import './Registry.css';
 
-const img = require("../res/om_registry.jpg");
+const img = require("../res/test_photo_2.jpg");
 const store_names = [['amazon','https://www.amazon.com/wedding'],
 ['target','https://www.target.com/gift-registry/wedding-registry']];
 class Registry extends Component{
