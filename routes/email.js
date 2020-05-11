@@ -5,9 +5,11 @@ const   express = require('express'),
         cors = require('cors')
         sgMail = require('@sendgrid/mail'),
         sql = require('sqlite3').verbose();
+        apiKey = process.env.TWILLOAPIKEY
 
-sgMail.setApiKey('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');
 
+// sgMail.setApiKey('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');
+sgMail.setApiKey(apiKey)
 app.use(cors());
 app.use(express.json())
 

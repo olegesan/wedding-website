@@ -29,4 +29,5 @@ app.use(function (req, res, next) {
 
 app.listen(port, ()=>{
     console.log("Server is running on "+port);
+    console.log(process.env.TWILLOAPIKEY)
 })

@@ -8,7 +8,7 @@
     "start": "node index.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
-  "author": "Rube, Oleg",
+  "author": "Ruben, Oleg",
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^6.5.4",
